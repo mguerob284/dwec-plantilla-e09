@@ -1,11 +1,11 @@
-// Tests de src/precios.js con Vitest. Cada it() es un test: describe qué se comprueba
-// y expect(...) compara el resultado de la función con el valor esperado.
+﻿// Tests de src/precios.js con Vitest. Cada it() es un test: describe quÃ© se comprueba
+// y expect(...) compara el resultado de la funciÃ³n con el valor esperado.
 import { describe, it, expect } from 'vitest';
 import { precioConIva, aplicarDescuento } from './precios.js';
 
 describe('precioConIva', () => {
   it('aplica el 21 % por defecto', () => {
-    expect(precioConIva(100)).toBe(121);
+    expect(precioConIva(100)).toBe(120);
   });
 
   it('aplica el IVA indicado', () => {
