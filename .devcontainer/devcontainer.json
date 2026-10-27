@@ -1,0 +1,11 @@
+{
+  "name": "Plantilla DWEC",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:24",
+  "customizations": {
+    "vscode": {
+      "extensions": ["dbaeumer.vscode-eslint", "esbenp.prettier-vscode", "vitest.explorer"]
+    }
+  },
+  "forwardPorts": [5173],
+  "postCreateCommand": "npm install"
+}

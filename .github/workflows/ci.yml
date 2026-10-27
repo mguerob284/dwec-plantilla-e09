@@ -1,0 +1,33 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  calidad:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Descargar el código
+        uses: actions/checkout@v4
+
+      - name: Preparar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+
+      - name: Instalar dependencias
+        run: npm ci
+
+      - name: Lint
+        run: npm run lint
+
+      - name: Comprobar formato
+        run: npx prettier --check .
+
+      - name: Tests
+        run: npx vitest run
+
+      - name: Build
+        run: npm run build
