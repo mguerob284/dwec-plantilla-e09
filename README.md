@@ -110,11 +110,11 @@ transforming...
 ✓ 6 modules transformed.
 rendering chunks...
 computing gzip size...
-dist/index.html                 1.21 kB │ gzip: 0.57 kB
+dist/index.html                 1.17 kB │ gzip: 0.57 kB
 dist/assets/index-BxHOtSx5.css  0.30 kB │ gzip: 0.22 kB
 dist/assets/index-aDXYxtym.js   1.40 kB │ gzip: 0.75 kB
 
-✓ built in 378ms
+✓ built in 260ms
 ```
 
 ## Pruebas
